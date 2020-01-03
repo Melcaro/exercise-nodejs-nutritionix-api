@@ -1,6 +1,6 @@
 const auth = {
-  appId: 'cdee0d11',
-  appKey: 'b09d919c0e1bea6f1a25747a72befda3',
+  appId: '804f4f4b',
+  appKey: '69093f0b18d9056f5fec9ff7b828b05f',
 };
 
 module.exports = auth;

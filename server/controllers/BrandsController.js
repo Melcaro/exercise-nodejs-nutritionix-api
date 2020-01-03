@@ -8,4 +8,12 @@ const getBrandsByTheme = async (req, res) => {
   res.send(brandsList);
 };
 
-module.exports = { getBrandsByTheme };
+const getBrandMenuByID = async (req, res) => {
+  const { brandID } = req.params;
+  const {
+    data: { hits: brandMenu },
+  } = await BrandsStore.fetchBrandMenuByID(brandID);
+  res.send(brandMenu);
+};
+
+module.exports = { getBrandsByTheme, getBrandMenuByID };
